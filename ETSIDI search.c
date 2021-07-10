@@ -11,8 +11,8 @@ typedef struct{
 }plan;
 
 void planesdeestudio(int caso);
-void grados(int n);
-void cursos();
+void grados();
+void cursos(int n);
 void cabecera();
 void cabecera1();
 void fintabla();
@@ -28,28 +28,28 @@ int main(){
 
 	while(!cerrar){
 
-		printf("\n\nPor favor seleccione una opcion: \n1) Buscar un plan de estudios\n2) Buscar asignaturas en funcion del curso\n3) Buscar informacion sobre una asignatura\n4)Comparador de asignaturas\n0)Salir\n");
+		printf("\n\nPor favor seleccione una opcion: \n1) Buscar un plan de estudios\n2) Buscar asignaturas en funcion del curso\n3) Buscar informacion sobre una asignatura\n4) Comparador de asignaturas\n0)Salir\n");
 		scanf("%d", &opcion);
 
 		switch(opcion){
 			case 1:
                 printf("Bienvenido al menu de planes de estudio, por favor elija la carrera de la cual desea ver el plan de estudios. \n");
-                grados(1);
+                grados();
                 planesdeestudio (1);
 				break;
 
 			case 2:
-			    printf("Bienvenido al menu de las asignaturas de una carrera por curso, por favor elija una curso.\n");
-			    cursos();
+			    printf("Bienvenido al menu de las asignaturas de una carrera por curso, por favor elija una carrera.\n");
+			    grados();
 			    planesdeestudio (2);
 				break;
 
 			case 3:
-			    printf("A continuacion se le mostrara informacion sobre una asignatura. \n");
+			    printf("Escriba la asignatura de la que desea que le proporcionemos informacion.\n");
 				break;
 
             case 4:
-			    printf("Comparador. \n");
+			    printf("Bienvenido al comparador de asignaturas.\n");
 				break;
 
 			case 0:
@@ -61,18 +61,18 @@ int main(){
 	}
 
 }
-void grados(int n)
+void grados()
 {
-    if (n==2)
-        {
-            printf("Ahora seleccione una de las siguientes carreras:\n");
-        }
 	printf("1 - Grado en Ingenieria Electrica\n2 - Grado en Ingenieria Electronica Industrial y Automatica\n3 - Grado en Ingenieria Mecanica\n4 - Grado en Ingenieria Quimica\n");
 	printf("5 - Grado en Ingenieria Dis. Industrial y Desarrollo de Producto\n6 - Doble Grado en Ingenieria Electrica y en Ingenieria Electronica Industrial y Automatica\n7 - Doble Grado en Ingenieria en Dis. Industrial y Desarrollo de Producto y en Ingenieria Mecanica\n");
 }
-void cursos()
+void cursos(int n)
 {
-    printf("1 - Primer curso\n2 - Segundo curso\n3 - Tercero curso\n4 - Cuarto curso\n5 - Quinto curso [SOLO PARA LOS DOBLES GRADOS]\n");
+    printf("A continuacion elija el curso:\n");
+    printf("1 - Primer curso\n2 - Segundo curso\n3 - Tercero curso\n4 - Cuarto curso\n");
+    if (n==2){
+        printf("5 - Quinto curso\n");
+    }
 }
 void cabecera()
 {
@@ -230,368 +230,97 @@ void planesdeestudio(int caso)
 	{
     switch (opcion){
         case 1:
-            grados(2);
+            cursos(1);
             scanf("%d",&op1);
-            switch (op1){
-                case 1:
-                    cabecera1();
-                    for(i=0;i<52;i++)
-                    {
-                        if(tablaE[i].curso ==1)
+            cabecera1();
+            for(i=0;i<52;i++)
+                {
+                    if(tablaE[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaE[i].codigo, tablaE[i].nombre,tablaE[i].Ncreditos,tablaE[i].tipo,tablaE[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
-                case 2:
-                    cabecera1();
-                    for(i=0;i<48;i++)
-                    {
-                        if(tablaA[i].curso ==1)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaA[i].codigo, tablaA[i].nombre,tablaA[i].Ncreditos,tablaA[i].tipo,tablaA[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 3:
-                    cabecera1();
-                    for(i=0;i<66;i++)
-                    {
-                        if(tablaM[i].curso ==1)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaM[i].codigo, tablaM[i].nombre,tablaM[i].Ncreditos,tablaM[i].tipo,tablaM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 4:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaQ[i].curso ==1)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaQ[i].codigo, tablaQ[i].nombre,tablaQ[i].Ncreditos,tablaQ[i].tipo,tablaQ[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 5:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaD[i].curso ==1)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaD[i].codigo, tablaD[i].nombre,tablaD[i].Ncreditos,tablaD[i].tipo,tablaD[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 6:
-                    cabecera1();
-                    for(i=0;i<55;i++)
-                    {
-                        if(tablaEE[i].curso ==1)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaEE[i].codigo, tablaEE[i].nombre,tablaEE[i].Ncreditos,tablaEE[i].tipo,tablaEE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 7:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaDM[i].curso ==1)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaDM[i].codigo, tablaDM[i].nombre,tablaDM[i].Ncreditos,tablaDM[i].tipo,tablaDM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-            }
+                }
+            fintabla1();
 			break;
         case 2:
-            grados(2);
+            cursos(1);
             scanf("%d",&op1);
-            switch (op1){
-                case 1:
-                    cabecera1();
-                    for(i=0;i<52;i++)
-                    {
-                        if(tablaE[i].curso ==2)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaE[i].codigo, tablaE[i].nombre,tablaE[i].Ncreditos,tablaE[i].tipo,tablaE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 2:
-                    cabecera1();
-                    for(i=0;i<48;i++)
-                    {
-                        if(tablaA[i].curso ==2)
+            cabecera1();
+            for(i=0;i<48;i++)
+                {
+                    if(tablaA[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaA[i].codigo, tablaA[i].nombre,tablaA[i].Ncreditos,tablaA[i].tipo,tablaA[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
-                case 3:
-                    cabecera1();
-                    for(i=0;i<66;i++)
-                    {
-                        if(tablaM[i].curso ==2)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaM[i].codigo, tablaM[i].nombre,tablaM[i].Ncreditos,tablaM[i].tipo,tablaM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 4:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaQ[i].curso ==2)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaQ[i].codigo, tablaQ[i].nombre,tablaQ[i].Ncreditos,tablaQ[i].tipo,tablaQ[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 5:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaD[i].curso ==2)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaD[i].codigo, tablaD[i].nombre,tablaD[i].Ncreditos,tablaD[i].tipo,tablaD[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 6:
-                    cabecera1();
-                    for(i=0;i<55;i++)
-                    {
-                        if(tablaEE[i].curso ==2)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaEE[i].codigo, tablaEE[i].nombre,tablaEE[i].Ncreditos,tablaEE[i].tipo,tablaEE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 7:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaDM[i].curso ==2)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaDM[i].codigo, tablaDM[i].nombre,tablaDM[i].Ncreditos,tablaDM[i].tipo,tablaDM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-            }
-			break;
+                }
+            fintabla1();
+            break;
         case 3:
-            grados(2);
+            cursos(1);
             scanf("%d",&op1);
-            switch (op1){
-                case 1:
-                    cabecera1();
-                    for(i=0;i<52;i++)
-                    {
-                        if(tablaE[i].curso ==3)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaE[i].codigo, tablaE[i].nombre,tablaE[i].Ncreditos,tablaE[i].tipo,tablaE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 2:
-                    cabecera1();
-                    for(i=0;i<48;i++)
-                    {
-                        if(tablaA[i].curso ==3)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaA[i].codigo, tablaA[i].nombre,tablaA[i].Ncreditos,tablaA[i].tipo,tablaA[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 3:
-                    cabecera1();
-                    for(i=0;i<66;i++)
-                    {
-                        if(tablaM[i].curso ==3)
+            cabecera1();
+            for(i=0;i<66;i++)
+                {
+                    if(tablaM[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaM[i].codigo, tablaM[i].nombre,tablaM[i].Ncreditos,tablaM[i].tipo,tablaM[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
-                case 4:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaQ[i].curso ==3)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaQ[i].codigo, tablaQ[i].nombre,tablaQ[i].Ncreditos,tablaQ[i].tipo,tablaQ[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 5:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaD[i].curso ==3)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaD[i].codigo, tablaD[i].nombre,tablaD[i].Ncreditos,tablaD[i].tipo,tablaD[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 6:
-                    cabecera1();
-                    for(i=0;i<55;i++)
-                    {
-                        if(tablaEE[i].curso ==3)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaEE[i].codigo, tablaEE[i].nombre,tablaEE[i].Ncreditos,tablaEE[i].tipo,tablaEE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 7:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaDM[i].curso ==3)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaDM[i].codigo, tablaDM[i].nombre,tablaDM[i].Ncreditos,tablaDM[i].tipo,tablaDM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-            }
+                }
+            fintabla1();
 			break;
         case 4:
-            grados(2);
+            cursos(1);
             scanf("%d",&op1);
-            switch (op1){
-                case 1:
-                    cabecera1();
-                    for(i=0;i<52;i++)
-                    {
-                        if(tablaE[i].curso ==4)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaE[i].codigo, tablaE[i].nombre,tablaE[i].Ncreditos,tablaE[i].tipo,tablaE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 2:
-                    cabecera1();
-                    for(i=0;i<48;i++)
-                    {
-                        if(tablaA[i].curso ==4)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaA[i].codigo, tablaA[i].nombre,tablaA[i].Ncreditos,tablaA[i].tipo,tablaA[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 3:
-                    cabecera1();
-                    for(i=0;i<66;i++)
-                    {
-                        if(tablaM[i].curso ==4)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaM[i].codigo, tablaM[i].nombre,tablaM[i].Ncreditos,tablaM[i].tipo,tablaM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 4:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaQ[i].curso ==4)
+            cabecera1();
+            for(i=0;i<58;i++)
+                {
+                    if(tablaQ[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaQ[i].codigo, tablaQ[i].nombre,tablaQ[i].Ncreditos,tablaQ[i].tipo,tablaQ[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
-                case 5:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaD[i].curso ==4)
+                }
+            fintabla1();
+			break;
+        case 5:
+            cursos(1);
+            scanf("%d",&op1);
+            cabecera1();
+            for(i=0;i<58;i++)
+                {
+                    if(tablaD[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaD[i].codigo, tablaD[i].nombre,tablaD[i].Ncreditos,tablaD[i].tipo,tablaD[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
-                case 6:
-                    cabecera1();
-                    for(i=0;i<55;i++)
-                    {
-                        if(tablaEE[i].curso ==4)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaEE[i].codigo, tablaEE[i].nombre,tablaEE[i].Ncreditos,tablaEE[i].tipo,tablaEE[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-                case 7:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaDM[i].curso ==4)
-                    {
-                        printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaDM[i].codigo, tablaDM[i].nombre,tablaDM[i].Ncreditos,tablaDM[i].tipo,tablaDM[i].semestre);
-                    }
-                    }
-                    fintabla1();
-                    break;
-            }
+                }
+            fintabla1();
 			break;
-		case 5:
-		    printf("Ahora seleccione una de las siguientes carreras:\n");
-		    printf("1 - Doble Grado en Ingenieria Electrica y en Ingenieria Electronica Industrial y Automatica\n");
-		    printf("2 - Doble Grado en Ingenieria en Dis. Industrial y Desarrollo de Producto y en Ingenieria Mecanica\n");
+        case 6:
+            cursos(2);
             scanf("%d",&op1);
-            switch (op1){
-                case 1:
-                    cabecera1();
-                    for(i=0;i<55;i++)
-                    {
-                        if(tablaEE[i].curso ==5)
+            cabecera1();
+            for(i=0;i<55;i++)
+                {
+                    if(tablaEE[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaEE[i].codigo, tablaEE[i].nombre,tablaEE[i].Ncreditos,tablaEE[i].tipo,tablaEE[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
-                case 2:
-                    cabecera1();
-                    for(i=0;i<58;i++)
-                    {
-                        if(tablaDM[i].curso ==5)
+                }
+            fintabla1();
+			break;
+		case 7:
+		    cursos(2);
+            scanf("%d",&op1);
+		    cabecera1();
+            for(i=0;i<58;i++)
+                {
+                    if(tablaDM[i].curso ==op1)
                     {
                         printf("| %10d |  %75s | %10.1f | %15s | %10d |\n", tablaDM[i].codigo, tablaDM[i].nombre,tablaDM[i].Ncreditos,tablaDM[i].tipo,tablaDM[i].semestre);
                     }
-                    }
-                    fintabla1();
-                    break;
+                }
+            fintabla1();
+            break;
             }
-			break;
 
 	}
-}
 }
