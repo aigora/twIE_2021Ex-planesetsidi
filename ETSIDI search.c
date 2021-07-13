@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#define N 185
 
 typedef struct{
     char nombre[75];
@@ -17,20 +18,32 @@ void cabecera();
 void cabecera1();
 void fintabla();
 void fintabla1();
+void asignaturas(char subject);
 int main(){
 
-	int opcion;
+	int opcion,g,found,i;
 	char usuario[50];
+	char subject[75];
+	char subject2[75];
 	bool cerrar = false;
+	found=0;
+	FILE *f;
+    plan tabla[N];
+    f = fopen ("TodosPlanes.txt", "r");
+    g=0;
+	while (fscanf(f,"%d;%[^;];%f;%[^;];%d;%d\n",
+               &tabla[g].codigo, tabla[g].nombre,&tabla[g].Ncreditos,tabla[g].tipo,&tabla[g].curso,&tabla[g].semestre)!=EOF){
+				g++;
+				}
+    fclose(f);
 	printf("Bienvenido a ETSIDI search, introduzca su nombre de usuario:\n\n");
-
 	gets(usuario);
 
 	while(!cerrar){
 
 		printf("\n\nPor favor seleccione una opcion: \n1) Buscar un plan de estudios\n2) Buscar asignaturas en funcion del curso\n3) Buscar informacion sobre una asignatura\n4) Comparador de asignaturas\n0)Salir\n");
 		scanf("%d", &opcion);
-
+		while ((getchar()) != '\n');
 		switch(opcion){
 			case 1:
                 printf("Bienvenido al menu de planes de estudio, por favor elija la carrera de la cual desea ver el plan de estudios. \n");
@@ -45,11 +58,46 @@ int main(){
 				break;
 
 			case 3:
-			    printf("Escriba la asignatura de la que desea que le proporcionemos informacion.\n");
+			    printf ("Nombre de asignatura a buscar [PRIMERA LETRA EN MAYUSCULAS]:\n -> Si es un asignatura que contiene la palabra disenio escribe dis. en su lugar/\n");
+			    gets(subject);
+			    	for(i=0; i<N; i++){
+                            if(strcmp(subject,tabla[i].nombre)==0){
+
+						printf ("La asignatura %s tiene estos creditos %1.f  es de tipo %s  perteneciente al %d semestre, con codigo %d", tabla[i].nombre, tabla[i].Ncreditos,
+                    tabla[i].tipo, tabla[i].semestre, tabla[i].codigo);
+                    found==1;
+					}
+				}
+				if(found==0){
+					printf("\nLa asignatura no existe.\n");
+				}
 				break;
 
             case 4:
 			    printf("Bienvenido al comparador de asignaturas.\n");
+			    printf ("Nombre de la primera asignatura a comparar [PRIMERA LETRA EN MAYUSCULAS]:\n -> Si es un asignatura que contiene la palabra disenio escribe dis. en su lugar/\n");
+			    gets(subject);
+			    	for(i=0; i<N; i++){
+                            if(strcmp(subject,tabla[i].nombre)==0){
+
+						printf ("La asignatura %s tiene estos creditos %1.f  es de tipo %s  perteneciente al %d semestre, con codigo %d", tabla[i].nombre, tabla[i].Ncreditos,
+                    tabla[i].tipo, tabla[i].semestre, tabla[i].codigo);
+                    found==1;
+					}}
+				if(!found==0){
+					printf("\nLa asignatura no existe.\n");	}
+                printf ("\nNombre de la segunda asignatura a comparar [PRIMERA LETRA EN MAYUSCULAS]:\n -> Si es un asignatura que contiene la palabra disenio escribe dis. en su lugar/\n");
+
+                gets(subject2);
+			    	for(i=0; i<N; i++){
+                            if(strcmp(subject2,tabla[i].nombre)==0){
+
+						printf ("La asignatura %s tiene estos creditos %1.f  es de tipo %s  perteneciente al %d semestre, con codigo %d", tabla[i].nombre, tabla[i].Ncreditos,
+                    tabla[i].tipo, tabla[i].semestre, tabla[i].codigo);
+                    found==1;
+					}}
+				if(!found==0){
+					printf("\nLa asignatura no existe.\n");	}
 				break;
 
 			case 0:
@@ -328,3 +376,5 @@ void planesdeestudio(int caso)
 
 	}
 }
+
+
