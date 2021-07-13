@@ -1,0 +1,190 @@
+565000511;Algebra lineal;6;Basica;1;1
+565000512;Calculo infinitesimal;6;Basica;1;1
+565000513;Fisica I;6;Basica;1;1
+565000514;Quimica;6;Basica;1;1
+565000515;Expresion grafica y dis. asistido por ordenador;6;Basica;1;1
+565000521;Estadistica;6;Basica;1;2
+565000522;Ampliacion de matematicas;6;Basica;1;2
+565000523;Fisica II;6;Basica;1;2
+565000524;Informatica;6;Basica;1;2
+565000525;Dibujo artistico;6;Obligatoria;1;2
+565000531;Economia general y de la empresa;6;Basica;2;3
+565000532;English for professional and accademic communication;6;Obligatoria;2;3
+565000591;Nivelacion de ingles;6;Optativa;2;3
+565000533;Dis. basico;4.5;Obligatoria;2;3
+565000534;Ciencia de materiales;4.5;Obligatoria;2;3
+565000535;Resistencia de materiales;4.5;Obligatoria;2;3
+565000536;Fundamentos de estetica y antropologia;4.5;Obligatoria;2;3
+565000541;Teoria de circuitos;4.5;Obligatoria;2;4
+565000542;Tecnologias de fabricacion;4.5;Obligatoria;2;4
+565000543;Metodologia del dis. y la creatividad;4.5;Obligatoria;2;4
+565000544;Ingenieria grafica;6;Obligatoria;2;4
+565000545;Elasticidad y resistencia de materiales;6;Obligatoria;2;4
+565000546;Transmision de calor;4.5;Obligatoria;2;4
+565000551;Electronica;4.5;Obligatoria;3;5
+565000552;Maquinas electricas;4.5;Obligatoria;3;5
+565000553;Teoria de maquinas y mecanismos;4.5;Obligatoria;3;5
+565000554;Materiales no metalicos;3;Obligatoria;3;5
+565000555;Ingenieria de materiales;4.5;Obligatoria;3;5
+565000556;Tecnicas de representacion en dis. industrial;4.5;Obligatoria;3;5
+565000557;Taller de dis. I;4.5;Obligatoria;3;5
+565000561;Organizacion industrial;4.5;Obligatoria;3;6
+565000562;Medio ambiente;3;Obligatoria;3;6
+565000563;Aspectos legales del dis. y producto;3;Obligatoria;3;6
+565000564;Gestion del dis.;3;Obligatoria;3;6
+565000565;Taller de dis.;4.5;Obligatoria;3;6
+565000566;Ampliacion de expresion gráfica;4.5;Obligatoria;3;6
+565000567;Modelos maquetas y prototipos;4.5;Obligatoria;3;6
+565000568;Ecodisenio;3;Obligatoria;3;6
+565000571;Oficina tecnica;4.5;Obligatoria;4;7
+565000572;Disenio grafico e innovacion;4.5;Obligatoria;4;7
+565000573;Envase y embalaje;4.5;Obligatoria;4;7
+565000574;Digitalizacion tridimensional;4.5;Obligatoria;4;7
+565000575;Aspectos ergonomicos del producto;4.5;Obligatoria;4;7
+565000576;Taller de dis. II;4.5;Obligatoria;4;7
+565000577;Materiales avanzados;3;Obligatoria;4;7
+565000592;Practicas en empresa I;12;Optativa;4;8
+565000593;Practicas en empresa II;13.5;Optativa;4;8
+565000594;Practicas en empresa III;15;Optativa;4;8
+565000595;Practicas en empresa IV;18;Optativa;4;8
+565000582;Ampliacion de fisica;4.5;Optativa;4;8
+565000583;Segundondo idioma extranjero: FRANCES;6;Optativa;4;8
+565000584;Comunicacion oral y escrita;4.5;Optativa;4;8
+565000585;Fabricacion asistida por ordenador;3;Optativa;4;8
+565000586;Seguridd y salud en el trabajo;3;Optativa;4;8
+565000587;Analisis y sistesis de mecanismos;4.5;Optativa;4;8
+565000588;Competicion en ingenieria;6;Optativa;4;8
+565000589;Tecnologia de fabricacion de materiales plasticos;4.5;Optativa;4;8
+565000590;Proyecto fin de grado;12;PFG;4;8
+565000144;Tecnologias de fabricacion;4.5;Obligatoria;2;4
+565000153;Electronica analogica;7.5;Optativa;3;5
+565000154;Electronica digital y microprocesadores;7.5;Optativa;3;5
+565000155;Regulacion automatica;6;Optativa;3;5
+565000162;Electronica de potencia;4.5;Optativa;3;6
+565000163;Instrumentacion electronica;4.5;Optativa;3;6
+565000164;Robotica;4.5;Optativa;3;6
+565000165;Automatizacion industrial;6;Optativa;3;6
+565000166;Informatica industrial y comunicaciones;7.5;Optativa;3;6
+565000171;Sistemas electronicos industriales;7.5;Optativa;4;7
+565000172;Sistemas electronicos digitales;7.5;Optativa;4;7
+565000173;Sistemas informaticos industriales;7.5;Optativa;4;7
+565000174;Ingenieria de control;7.5;Optativa;4;7
+565000626;Mecanica;3;Obligatoria;1;2
+565000625;Metodos numericos en la ingenieria mecanica;3;Obligatoria;1;2
+565000637;Dis. basico;4.5;Obligatoria;2;3
+565000636;Fundamentos de estetica y antropologia;4.5;Obligatoria;2;3
+565000646;Metodologia del dis. y la creatividad;4.5;Obligatoria;2;4
+565000654;Disenio de maquinas I;3;Obligatoria;3;5
+565000655;Ingenieria de materiales;4.5;Obligatoria;3;5
+565000656;Mecanica de fluidos;4.5;Obligatoria;3;5
+565000658;Taller de dis. I;4.5;Obligatoria;3;5
+565000651;Tecnicas de representacion en dis. industrial;4.5;Obligatoria;3;5
+565000657;Teoria de estructuras;4.5;Obligatoria;3;5
+565000664;Automatica;3;Obligatoria;3;6
+565000665;Construcciones industriales;3;Obligatoria;3;6
+565000666;Disenio de maquinas II;4.5;Obligatoria;3;6
+565000688;Instalaciones industriales y edificios I;4.5;Obligatoria;3;6
+565000661;Organizacion industrial;4.5;Obligatoria;3;6
+565000663;Soldadura;4.5;Obligatoria;3;6
+565000677;Disenio mecánico;4.5;Obligatoria;4;7
+565000672;Electronica;4.5;Obligatoria;4;7
+565000689;Estructuras de hormigon;4.5;Obligatoria;4;7
+565000675;Ingenieria de fabricacion;4.5;Obligatoria;4;7
+565000673;Ingenieria termica;4.5;Obligatoria;4;7
+565000678;Materiales no metalicos;3;Obligatoria;4;7
+565000674;Metrologia y calidad;3;Obligatoria;4;7
+565000676;Motores alternativos;4.5;Obligatoria;4;7
+565000690;Sistemas constructivos y ejecucion de obras;4.5;Obligatoria;4;7
+565000682;Analisis y sintesis de mecanismos;4.5;Obligatoria;4;8
+565000700;Estructuras metalicasS;3;Obligatoria;4;8
+565000699;Ingenieria estructural;4.5;Obligatoria;4;8
+565000681;Maquinas y sistemas fluidomecanicos;4.5;Obligatoria;4;8
+565000686;Modelos maquetas y prototipos;4.5;Obligatoria;4;8
+565000698;Elementos finitos y vibraciones mecanicas;6;Obligatoria;5;9
+565000704;Instalaciones industriales y en edificios II;9;Obligatoria;5;9
+565000696;Materiales avanzados;3;Obligatoria;5;9
+565000697;Sistemas de fabricacion flexible;3;Obligatoria;5;9
+565000695;Taller de dis. III;4.5;Obligatoria;5;9
+565000603;Proyecto fin de grado en ingenieria mecanica;12;PFG;5;9
+565000605;Proyecto fin de grado en ingenieria en dis. industrial;12;PFG;5;9
+565000246;Teoria de circuitos II;6;Optativa;2;4
+565000247;Electronica;4.5;Obligatoria;2;4
+565000251;Mecanica de fluidos;4.5;Obligatoria;3;5
+565000252;Instalaciones electricas en baja tension;4.5;Optativa;3;5
+565000254;Teoria de circuitos III;4.5;Optativa;3;5
+565000255;Ampliacion de maquinas electricas;4.5;Optativa;3;5
+565000256;Automatizacion industrial;3;Optativa;3;5
+565000257;Lineas subterraneas de alta tension y centros de transformacion;4.5;Optativa;3;5
+565000261;Organizacion industrial;4.5;Obligatoria;3;6
+565000262;Medidas electricas;3;Optativa;3;6
+565000264;Electronica de potencia;4.5;Optativa;3;6
+565000265;Calculo y dis. de maquinas electricas;4.5;Optiva;3;6
+565000266;Dis. de centrales electricas;6;Optativa;3;6
+565000267;Lineas aereas de alta tension;4.5;Optativa;3;6
+565000272;Protecciones electricas;4.5;Optativa;4;7
+565000273;Calculo y dis. de subestaciones;6;Optativa;4;7
+565000274;Sistemas electricos y de potencia;4.5;Optativa;4;7
+565000275;Energias renovables;4.5;Optativa;4;7
+565000276;Control de maquinas y accionamientos electricos;6;Optativa;4;7
+565000325;Metodos numericos en ingenieria mecanica;3;Optativa;1;2
+565000346;Soldadura;4.5;Optativa;2;4
+565000347;Instalaciones industriales y en edificios I;4.5;Optativa;2;4
+565000353;Teoria de maquinas y mecanismos;4.5;Obligatoria;3;5
+565000354;Dis. de maquinas I;3;Optativa;3;5
+565000357;Teoria de estructuras;4.5;Optativa;3;5
+565000363;Construcciones industriales;3;Optativa;3;6
+565000364;Dis. de maquinas II;4.5;Optativa;3;6
+565000365;Maquinas y sistemas fluido mecanicos;4.5;Optativa;3;6
+565000368;Ingenieria estructural;4.5;Optativa;3;6
+565000369;Estructuras metalicas;3;Optativa;3;6
+565000371;Metrologia y calidad;3;Optativa;4;7
+565000373;Motores alternativos;4.5;Optativa;4;7
+565000374;Sistemas de fabricacion flexible;3;Optativa;4;7
+565000375;Dis. mecanico;4.5;Optativa;4;7
+565000376;Elementos finitos y vibraciones mecanicas;6;Optativa;4;7
+565000377;Estructuras de hormigon;4.5;Optativa;4;7
+565000378;Sistemas constructivos y ejecucion de obras;4.5;Optativa;4;7
+565000379;instalaciones industriales y en edificios ii;9;Optativa;4;7
+565000385;Mecanica del suelo y cimentaciones especiales;4.5;Optativa;4;8
+565000387;Ingenieria del transporte;4.5;Optativa;4;8
+565000390;Ingenieria de la soldadura;4.5;Optativa;4;8
+565000391;Tecnologia de fabricacion de materiales plasticos;4.5;Optativa;4;8
+565000425;Metodos numericos en ingenieria quimica;3;Optativa;1;2
+565000426;Principios de los procesos quimicos;3;Optativa;1;2
+565000444;Experimentacion quimica;3;Optativa;2;4
+565000445;Analisis quimico e instrumental;6;Optativa;2;4
+565000446;Quimica inorganica y organica;6;Optativa;2;4
+565000447;Experimentacion en ingenieria quimica I;3;Optativa;2;4
+565000454;Materiales macromoleculares;3;Optativa;3;5
+565000455;Quimica fisica;6;Optativa;3;5
+565000456;Experimentacion en ingenieria quimica ii;3;Optativa;3;5
+565000457;Industria de procesos quimicos;4.5;Optativa;3;5
+565000464;Operaciones basicas de ingenieria quimica I;6;Optativa;3;6
+565000465;Reactores quimicos;6;Optativa;3;6
+565000466;Experimentacion en ingenieria quimica III;6;Optativa;3;6
+565000470;Operaciones basicos de ingenieria quimica II;6;Optativa;4;7
+565000472;Ingenieria de procesos y productos;4.5;Optativa;4;7
+565000473;Regulacion de procesos quimicos;6;Optativa;4;7
+565000474;Contaminacion de aguas;3;Optativa;4;7
+565000475;Tratamiento de residuos y suelos;3;Optativa;4;7
+565000476;Contaminacion atmosferica;3;Optativa;4;7
+565000477;Conocimientos y propiedades ingenieriles de materiales polimericos;3;Optativa;4;7
+565000478;Transformacion de polimeros;6;Optativa;4;7
+565000479;Quimica-fisica aplicada a sistemas multicomponente;3;Optativa;4;7
+565000480;Tecnicas industriales de separacion de sistemas multicomponente;6;Optativa;4;7
+565000753;Electronica analogica;7.5;Obligatoria;3;5
+565000754;Electronica digital y microprocesadores;7.5;Obligatoria;3;5
+565000773;Lineas subterreanas de At;4.5;Obligatoria;3;5
+565000762;Instrumentacion electronica;4.5;Obligatoria;3;6
+565000764;Automatizacion industrial II;6;Obligatoria;3;6
+565000765;Informatica industrial y comunicaciones;7.5;Obligatoria;3;6
+565000781;Organizacion industrial;4.5;Obligatoria;3;6
+565000771;Instalaciones electricas de baja tension;4.5;Obligatoria;4;7
+565000772;Ampliacion de maquinas electricas;4.5;Obligatoria;4;7
+565000702;Proyecto fin de grado en ingenieria electrica;12;PFG;5;10
+565000701;Proyecto fin de grado en ingenieria electronica y automatica;12;PFG;5;10
+
+
+
+
+
