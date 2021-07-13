@@ -105,7 +105,7 @@ void planesdeestudio(int caso)
     plan tablaD[58];
     plan tablaEE[55];
     plan tablaDM[72];
-
+    //Eleccion de la carrera de busqueda
 	scanf("%d",&opcion);
 	//Asignamos un  fichero para cada plan de estudios de cada carrera y lo leemos.
     FILE * fichero1;
@@ -164,7 +164,8 @@ void planesdeestudio(int caso)
 				g++;
 				}
     fclose(fichero7);
-
+    //OPCION 1: cada "case" representa una carrera, se imprime en pantalla el nombre del grado y una tabla del plan de estudios
+    //del grado
     if (caso==1){
     switch (opcion){
         case 1:
@@ -226,6 +227,9 @@ void planesdeestudio(int caso)
 
 	}
 	}
+//OPCION 2: Para no tener que repetir la lectura de los mismos ficheros en otro función distinta, se ha implementado
+// en esta. Una vez se elige la carrera de la que se quiere buscar el curso, se le pide al usuario que indique el curso
+//en particular y se imprime en pantalla solo ese curso.
 	else
 	{
     switch (opcion){
