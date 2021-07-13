@@ -18,7 +18,7 @@ void cabecera();
 void cabecera1();
 void fintabla();
 void fintabla1();
-void asignaturas(char subject);
+
 int main(){
 
 	int opcion,g,found,i;
@@ -275,7 +275,7 @@ void planesdeestudio(int caso)
 
 	}
 	}
-//OPCION 2: Para no tener que repetir la lectura de los mismos ficheros en otro función distinta, se ha implementado
+//OPCION 2: Para no tener que repetir la lectura de los mismos ficheros en otro funciÃ³n distinta, se ha implementado
 // en esta. Una vez se elige la carrera de la que se quiere buscar el curso, se le pide al usuario que indique el curso
 //en particular y se imprime en pantalla solo ese curso.
 	else
